@@ -1,0 +1,643 @@
+	/* Font */
+@font-face {
+	font-family: 'Gill Sans';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Gill Sans'), url('../font/GILR45.woff') format('woff');
+}
+
+@font-face {
+font-family: 'corpuscare_light';
+font-style: normal;
+font-weight: normal;
+src: local('corpuscare_light'), url(../font/corpuscare_light.ttf);
+}
+
+
+
+@media screen and (min-width : 321px) {
+	#all-cont{
+		margin-top: 10% !important;
+	}
+
+	.logoindex{
+		width: 100% !important;
+		height: 12% !important;
+	}
+	#bas{
+		height: 36% !important;
+	}
+	#date{
+		font-size:5.250em !important;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+	#all-cont{
+		margin-top: 0% !important;
+	}
+
+
+	.logoindex{
+
+		height: 16% !important;
+	}
+	#bas{
+		height: 48% !important;
+	}
+	
+
+}
+
+	/* Generale */
+html *{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	width: 100%;
+	height:	100%;
+	min-width: 700px;
+	min-height: 300px;
+}
+
+	/* Body backgrounds */
+#body-index{
+	background-image:url(../img/bg/001.jpg); 
+	background-attachment:fixed; 
+	background-size:cover; 
+	background-repeat:no-repeat; 
+	background-position-x:center;
+}
+
+#body-home{
+	background-image:url(../img/bg/home.jpg); 
+	background-attachment:fixed; 
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-position-x:center;
+}
+#body-chisiamo{
+	background-image:url(../img/bg/chisiamobg.jpg); 
+	background-attachment:fixed; 
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-position-x:center;
+}
+#body-servizi{
+	background-image:url(../img/bg/servizibs.jpg); 
+	background-attachment:fixed; 
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-position-x:center;
+}
+#body-contatti{
+	background-image:url(../img/bg/contattibg.jpg); 
+	background-attachment:fixed; 
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-position-x:center;
+}
+#body-galleria{
+	background-image:url(../img/bg/galleriabg.jpg); 
+	background-attachment:fixed; 
+	background-size:cover;
+	background-repeat:no-repeat; 
+	background-position-x:center;
+}
+
+	/* Sponsor */
+#sponsor-box{
+	height: 80%;
+	width: 14.28%;
+	position: absolute;
+	right: -12%;
+	top: 0px;
+	background-position: center;
+	margin-top: 8%;
+	
+}
+.sponsor{
+	margin-top: 15.333333333%;
+	height: 11.5%;
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:right;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+
+}
+
+#regione{background-image:url(../img/sp/calabria.png);}
+#comune{background-image:url(../img/sp/caulonia.png);}
+#provincia{background-image:url(../img/sp/reggio.png);}
+#cni{background-image:url(../img/sp/cnilogo.png);}
+
+	/* Index */
+.logoindex{
+	background-position: center;
+	width: 80%;
+	height: 16%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#omino{
+	top: 1%;
+	margin-left:0%;
+	width:70%;
+	height: 80%;
+	background-position: center;
+	position: absolute;
+	background-image: url(../img/ix/omino.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: -1;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+#tes{
+	background-image: url("../img/ix/uplo.png");
+	background-size: contain;
+	background-repeat:no-repeat;
+	animation-name: fadeInRight;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInRight;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+
+}
+#cen{
+	background-image: url("../img/ix/tacen.png");
+	background-size: contain;
+	background-repeat:no-repeat;
+	animation-name: fadeInUp;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInUp;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+#bas{
+	height: 48%;
+	background-image: url("../img/ix/juso.png");
+	background-size: contain;
+	background-repeat:no-repeat;
+	animation-name: fadeInDown;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInDown;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+#enter{
+	margin-top:0;
+	text-align: center;	
+	display: block;
+	color: rgba(98,178,188,0.8);
+	font-size: 4em;
+	width: 30%;
+	margin: auto;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-weight:100;
+	text-decoration:none;
+	height:102px;
+}
+
+#enter:hover{
+	color:rgba(198,147,67,0.8);
+}
+#date{
+
+	margin-top:0;
+	text-align: center;	
+	display: block;
+	color: rgba(255,255,255,1);
+	font-size: 6.750em;
+	width: 100%;
+	margin: auto;
+	font-family:inherit;
+	font-weight:100;
+	text-decoration:none;
+	background-repeat:no-repeat;
+	animation-name: fadeInLeft;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInLeft;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+#coming{
+
+	margin-top:0;
+
+	text-align: center;	
+	display: block;
+	color: rgba(255,255,255,1);
+	font-size: 4.250em;
+	width: 100%;
+	margin: auto;
+	font-family:inherit;
+	font-weight:100;
+	text-decoration:none;
+	height:102px;
+	animation-name: fadeInRight;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInRight;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+
+
+	/* Head */
+#head{
+	width: 100%;
+	height: 20%;
+	min-height: 150px;
+}
+
+#logo{
+	display: block;
+	height: 60%;
+	width: 13%;
+	background-image: url(../img/logohead.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:right;
+	margin-top:1%;
+	float: left;
+}
+#top-nav{
+	width: 80%;
+	height: 50%;
+	float: left;
+	margin: 50px 0px 0px 30px;
+}
+
+#top-nav > a{
+	text-align: center;
+	width:19%;
+	display:inline-block;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	font-family: Gill Sans;
+}
+
+	/* Left */
+#left{
+	height: 80%;
+	width: 12.5%;
+	position: absolute;
+	left:-15.5%;
+	top: 1.35353535%;
+	background-image: url(../img/left.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+	/* Pagine */
+#all-cont{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width:80%;
+	min-height: 100%;
+}
+
+#content{
+	width: 100%;
+	height: 80%;
+	font-family: corpuscare_light;
+}
+#programma{
+	width:63.7%;
+	height:100%;
+	float:left;
+	margin-top:-3%;
+	
+}
+.prog-date{
+	color:#FFFFFF;
+	text-align:center;
+	font-family:inherit;
+	font-size:6.125em;
+	margin-top:24%;
+	padding:2%;
+	float:center;
+	animation-name: fadeInUp;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInUp;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	
+}
+ /* animazioni date home page*/
+ 
+/*#dal{
+	margin-left:9%;
+	animation-name: fadeInLeft;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInLeft;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+#diciannove{
+	animation-name: fadeInUp;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInUp;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+#al{
+	animation-name: fadeInRight;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInRight;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+#ventitre{
+	animation-name: fadeInDown;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInDown;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+#agosto{
+	animation-name: fadeInRight;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInRight;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}*/
+
+#coming-home{
+	color:rgba(229,170,55,1.00) !important;
+	text-align:center;
+	font-family:inherit;
+	font-size:4em;
+	margin-top: 8%;
+	text-shadow: 0px 2px 4px #000;
+	animation-name: flash;
+	animation-duration: 5s;
+	animation-delay: 5 ms;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in;
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-delay: 5 s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function:ease-in;
+}
+
+#news{
+	width:35.7%;
+	float:right;
+	margin-top:-3%;
+}
+
+#title-news{
+	font-family:inherit;
+	color:rgba(235,235,235,1.00);
+	text-align:center;
+	font-size:3.125em;
+	border-left:2px solid rgba(93,203,213,0.4);
+	animation-name: fadeInUp;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeInUp;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+
+#text-news {
+	color: white !important;
+	padding: 5%;
+	font-size: 1.250em;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-weight:100;
+	text-align: justify;
+	border-left:2px solid rgba(93,203,213,0.4);
+	margin-top:5%;
+	animation-name: fadeIn;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 2.5s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+}
+.title{
+	color:#EEB136;
+	text-align: center;
+	font-size: 5em;
+	}
+	
+.title:hover{
+	color:white;
+	background-color:rgba(19,6,6,0.45);
+	border-top:1px solid rgba(106,223,235,0.60);
+	border-bottom:1px solid rgba(106,223,235,0.60);
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	-webkit-animation-name: fadeIn;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(x1,y1,x2,y2);
+	
+}
+.title:active{
+	color:rgba(109,234,245,1.00);	
+	border-top:1px solid rgba(238,177,54,0.60);
+	border-bottom:1px solid rgba(238,177,54,0.60);}
+
+.content {
+	overflow:hidden;
+	transition-duration:0.5s;
+	color: white;
+	font-size: 1.125em;
+	margin:3px;
+	padding: 15px;
+	text-align: center;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	background: rgba(0,0,0,0.65);
+	border-top:1px solid rgba(106,223,235,0.60);
+	border-bottom:1px solid rgba(106,223,235,0.60);
+}
+.servizi-text{color:white; text-decoration:none;}
+.servizi-text:hover{color:rgba(238,177,54,1.00);}
+.servizi-text:active{color:rgba(106,223,235,1.00);}
+.servizi-direct{
+	color:rgba(217,168,63,1.00);
+	text-decoration:none;}
+.servizi-direct:hover{color:white;}
+.servizi-direct:active{color:rgba(106,223,235,1.00);}
+
+#form{
+	width:49.7%;
+	height:100%;
+	float:right;
+	margin-top:-3%;
+}
+iframe{
+	width:49.7%;
+	height:100%;
+	float:right;
+	margin-top:-3%;
+}
+#contattaci{
+	margin-top:0 !important;
+	font-size:5em;
+}
+#comune-contatti{
+	margin-top:-7% !important;
+	font-size:3em;
+}
+#indirizzo{
+	font-size:2em;
+	margin-top:0 !important;
+}
+.gallery{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	height:25%;
+	width:90%;
+	margin-top:5%;
+	text-decoration:none;
+	border-top:1px solid rgba(106,223,235,0.60);
+	border-bottom:1px solid rgba(106,223,235,0.60);
+}
+
+#gallery11{
+	margin-top:-3%;
+}
+.title-gl{
+	text-align:center;
+	font-size:3.275em;
+	color:white;
+	background-color:rgba(0,0,0,0.7);
+	padding:2%;
+	margin-top:6%;
+}
+#gallery11{
+	background-image:url(../img/bg2011.jpg);
+	background-size:cover;
+	background-position:center;
+	
+}
+#gallery12{
+	background-image:url(../img/bg2012.jpg);
+	background-size:cover;
+	background-position:center;
+	
+}
+#gallery13{
+	background-image:url(../img/bg2013.jpg);
+	background-size:cover;
+	background-position:center;
+	
+}
+a.imgt{
+	display: block;
+	width: 300px;
+	height: 200px;
+	margin: 20px;
+	float: left;
+	border-bottom: 1px solid rgba(106,223,235,1.00);
+	border-top: 1px solid rgba(106,223,235,1.00);
+}
+input{
+	margin: 2% 5%;
+	width: 90%;
+	height: 30px;
+}
+textarea{
+	margin: 2% 5%;
+	width: 90%;
+}
+input[type="submit"] {
+	background-color: rgba(238,177,54,1.00);
+	border: none;
+	border-bottom: 1px solid rgba(106,223,235,1.00);
+	border-top: 1px solid rgba(106,223,235,1.00);
+	box-shadow: 2px 2px 10px black;
+	color: black;
+	font-family: inherit;
+	font-size: 1.750em;
+}
+	
+#footer{
+	width: 125%;
+	margin-left: -12.5%;
+	height: 15px;
+	text-align: center;
+	font-family: Gill Sans;
+	color: white;
+	font-size: 12px;
+}
+
+#footer > p > a{
+	color: white;
+	text-decoration: none;
+	font-family: Gill Sans;
+}

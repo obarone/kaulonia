@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Just Tarantella </title>
+		<link type="text/css" rel="stylesheet" href="css/global.css">	
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+	</head>
+	<body id="body-chisiamo">
+		<div id="all-cont">
+			<div id="head">
+				<a id="logo" href="home.html"></a>
+				<div id="top-nav" class="menu">
+		            <a id="home-bott" href="home.html">home</a>
+		            <a id="chisiamo-bott" href="chisiamo.html">chi siamo</a>
+		            <a id="servizi-bott" href="servizi.html">servizi</a>
+		            <a id="gallery-bott" href="gallery.html">gallery</a>
+		            <a id="contatti-bott" href="contatti.html">contatti</a>
+				</div>
+			</div>
+
+			<div id="left">
+			</div>
+
+			<div id="sponsor-box">
+		        <div alt="Comune di Caulonia" class="sponsor" id="comune"></div>
+		        <div alt="Provincia di Reggio Calabria" class="sponsor" id="provincia"></div>
+		        <div alt="Regione Calabria" class="sponsor" id="regione"></div>
+		        <div alt="CNI Music" class="sponsor" id="cni"></div>
+			</div>
+
+			<div id="content">
+            	<div id="caulonia-title" class="title"><p>caulonia</p></div>
+                <div id="caulonia-content" class="content"><p>Caulonia, centro dell’Alto Jonio reggino, sorge panoramica dall’alto dell’amba dorsale d’un calanco argilloso, alla sommità di una collina a 9 Km. dalla E90-SS.106. A Sud-Est si può ammirare la vallata dell’Allaro, il Sagra della Magna-Grecia, mentre sul lato Sud-Ovest si scorge la vallata dell’Amusa. Il suo territorio si estende dal mare sino alle serre d’Apromonte, elevandosi a 1.050 m.s.m. con il monte Gremi. Comprende, oltre al centro storico, ben 18 Frazioni. Il suo centro storico conserva tutta la poesia di un tempo che altrove è quasi scomparsa e che qui, come in molti altri centri della Calabria, sembra essersi fermata: stradine, vicoli, sottopassaggi, scalette, vecchi portali di pietra, palazzi gentilizi, chiese e monumenti nazionali. Le origini della città permangono ancora sconosciute. La documentazione pervenuta risulta ancora lacunosa. Nessun documento ci riporta ai primitivi insediamenti. Sono pervenuti sino a noi, frammenti, schegge, cocci dell’antichità. Quindi, la continuità del centro non è affidata all’antico. E’ affidata, invece, ai continui rifacimenti, a restauri, quando non a delle recenti sovrapposizioni. Di conseguenza assume il carattere di centro antico senza avere, però, l’auridicità del passato.</p></div>
+                <div id="festival-title" class="title"><p>il festival</p></div>
+                <div id="fesival-content" class="content"><p>L'amministrazione comunale pro-tempore, nell'intento di programmare a Caulonia un grosso evento culturale duraturo nel tempo, finalizzato alla valorizzazione del territorio, nel 1999, ebbe l'intuito di realizzare un festival di musica tradizionale calabrese, capace di legare momenti spettacolari della tradizione calabrese con momenti seminariali e di riflessione sulla cultura calabrese. Il mantenimento del ruolo della musica tradizionale in diversi riti religiosi che si svolgono a Caulonia, soprattutto durante la settimana Santa, la presenza di numerosi suonatori, l'antica tradizione della nostra gente, in occasione di matrimoni e di altre festività (festa di Crochi), mostravano il permanere di un humus vitale all'attecchimento ed alla crescita di una manifestazione che avesse la caratteristica e la specificità di una musica, che si accompagna con i gesti, scandita al ritmo della Tarantella. Questi presupposti erano da stimolo e da auspicio alla buona riuscita dell'iniziativa e della fondamentale sinergia che essa avrebbe instaurato con la gente del posto. Pertanto fu elaborato un progetto di folkfestival, in cui la parte musicale serale era accompagnata da una serie di corsi che si sarebbero svolti durante tutta la giornata.</p></div>
+                <div id="cni-title" class="title"><p>cni music</p></div>
+                <div id="cni-content" class="content"><p>Nata nel 1992, la Compagnia Nuove Indye è una tra le più importanti case discografiche nazionali in ambito etno-world, un punto di riferimento per la musica popolare italiana dell’ultimo ventennio. Con la vocazione a valorizzare la “cultura delle radici” in contrapposizione all’omologazione anglofona imposta dai grandi media, la CNI si è fatta portavoce di una «Nuova Musica Popolare» che, negli anni, attraverso l’ibridazione stilistica tra tradizione e sperimentazione, tra identità e contaminazione, ha dato alla luce produzioni di grande valore artistico e discografico. Dalla produzione all’editoria musicale, dalla distribuzione discografica e digitale al management, dai nuovi linguaggi multimediali all’organizzazione di eventi, la CNI ha saputo imporsi sul mercato italiano e internazionale attraverso scelte culturali e gestionali innovative e coraggiose.</p></div>    
+			</div>
+			<div id="footer">
+   				<p>p.iva 56401044802116 Comune di Caulonia All Right Reserved Comune di Caulonia 2014 developed by <a href="http://www.fabastudio.it">FABA Studio.it</a></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				kh = $("#caulonia-content").height();
+				fh = $("#fesival-content").height();
+				ch = $("#cni-content").height();
+				k = true;
+				f = true;
+				c = true;
+				$( "#caulonia-title" ).click();
+			});
+
+			$( "#caulonia-title" ).click(function() {
+  				if(!k){
+  					$('#caulonia-content').css({'height':kh-36+'px'});	
+  					$('#caulonia-content').css({'padding':'15px'});	
+  					k= true;
+  				}
+  				else{
+  					$('#caulonia-content').css({'height':0+'px'});	
+  					$('#caulonia-content').css({'padding':'0px 15px 0px 15px'});	
+  					k=false;
+  				}
+  				if(f){
+  					$('#fesival-content').css({'height':0+'px'});	
+   					$('#fesival-content').css({'padding':'0px 15px 0px 15px'});	
+  					f=false;
+  				}
+  				if(c){
+  					$('#cni-content').css({'height':0+'px'});	
+  					$('#cni-content').css({'padding':'0px 15px 0px 15px'});	
+  					c=false;
+  				}
+			});
+
+			$( "#festival-title" ).click(function() {
+  				if(!f){
+  					$('#fesival-content').css({'height':fh-36+'px'});	
+  					$('#fesival-content').css({'padding':'15px'});	
+  					f= true;
+  				}
+  				else{
+  					$('#fesival-content').css({'height':0+'px'});	
+   					$('#fesival-content').css({'padding':'0px 15px 0px 15px'});	
+  					f=false;
+  				}
+   				if(k){
+  					$('#caulonia-content').css({'height':0+'px'});	
+  					$('#caulonia-content').css({'padding':'0px 15px 0px 15px'});	
+  					k=false;
+  				}
+  				if(c){
+  					$('#cni-content').css({'height':0+'px'});	
+  					$('#cni-content').css({'padding':'0px 15px 0px 15px'});	
+  					c=false;
+  				}
+
+			});
+
+			$( "#cni-title" ).click(function() {
+  				if(!c){
+  					$('#cni-content').css({'height':ch-36+'px'});	
+  					$('#cni-content').css({'padding':'15px'});	
+  					c= true;
+  				}
+  				else{
+  					$('#cni-content').css({'height':0+'px'});	
+  					$('#cni-content').css({'padding':'0px 15px 0px 15px'});	
+  					c=false;
+  				}
+  				if(f){
+  					$('#fesival-content').css({'height':0+'px'});	
+   					$('#fesival-content').css({'padding':'0px 15px 0px 15px'});	
+  					f=false;
+  				}
+  				if(k){
+  					$('#caulonia-content').css({'height':0+'px'});	
+  					$('#caulonia-content').css({'padding':'0px 15px 0px 15px'});	
+  					k=false;
+  				}
+
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Just Tarantella </title>
+		<link type="text/css" rel="stylesheet" href="css/global.css">	
+        <link rel="stylesheet" type="text/css" href="css/anima.css">
+		<script type="text/javascript" src="js/jquery-2.0.2.js"></script>
+	</head>
+	<body id="body-servizi">
+		<div id="all-cont">
+			<div id="head">
+				<a id="logo" href="home.html"></a>
+				<div id="top-nav" class="menu">
+		            <a id="home-bott" href="home.html">home</a>
+		            <a id="chisiamo-bott" href="chisiamo.html">chi siamo</a>
+		            <a id="servizi-bott" href="servizi.html">servizi</a>
+		            <a id="gallery-bott" href="gallery.html">gallery</a>
+		            <a id="contatti-bott" href="contatti.html">contatti</a>
+				</div>
+			</div>
+
+			<div id="left">
+			</div>
+
+			<div id="sponsor-box">
+		        <div alt="Comune di Caulonia" class="sponsor" id="comune"></div>
+		        <div alt="Provincia di Reggio Calabria" class="sponsor" id="provincia"></div>
+		        <div alt="Regione Calabria" class="sponsor" id="regione"></div>
+		        <div alt="CNI Music" class="sponsor" id="cni"></div>
+			</div>
+
+			<div id="content">
+            	<div id="ordin-title" class="title">
+            		<p>ordinanze comunali</p>
+            	</div>
+                <div id="ordin-content" class="content">
+                	<p>
+	                	<a class="servizi-text" href="srv/31.pdf" target="_blank"> Contrasto all'occupazione illecita di suolo pubblico ed obbligo esposizione prezzo di vendita (Ordinanza n. 31)</a>
+	                	<br>
+						<a  class="servizi-text" href="srv/32.pdf" target="_blank">Divieto di vendita di bevande in contenitori di vetro (Ordinanza n. 32)</a>
+						<br>
+						<a class="servizi-text" href="srv/33.pdf" target="_blank">Divieto di affissione non autorizzata (Ordinanza n. 33)</a>
+						<br>
+						<a class="servizi-text" href="srv/34.pdf" target="_blank">Divieto riprese audio-visive non autorizzate (Ordinanza n. 34)</a>
+						<br>
+						<a class="servizi-text" href="srv/35.pdf" target="_blank">Sosta e circolazione vietata aree Centro Storico (Ordinanza n. 35)</a>
+						<br>
+					</p>
+				</div>
+                <div id="attivi-title" class="title">
+                	<p>attivita' produttive</p>
+                </div>
+                <div id="attivi-content" class="content">
+                	<p>
+	                	<a  class="servizi-text" href="srv/avviso.pdf" target="_blank">Avviso Pubblico - Richiesta occupazione temporanea di suolo pubblico per la manifestazione Kaulonia Tarantella Festival</a>
+	                	<br>
+						<a  class="servizi-text" href="srv/modulo.pdf" target="_blank">Richiesta occupazione temporanea di suolo pubblico per la manifestazione Kaulonia Tarantella Festival - Modulo</a>
+						<br>
+						<a  class="servizi-text" href="srv/adesione.pdf" target="_blank">Dichiarazione di adesione agli standards organizzativi del Kaulonia Tarantella Festival</a>
+					</p>
+				</div>
+                <div id="cust-title" class="title">
+                	<p>
+                		<a class="servizi-direct" href="srv/KTF.doc" target="_blank">customers satisfaction</a>
+                	</p>
+                </div>
+                <div id="spor-title" class="title">
+                	<p>
+                		<a class="servizi-direct"  href="srv/spit.doc" target="_blank">sportello informativo turistico</a>
+                	</p>
+                </div>
+			</div>
+			<div id="footer">
+   				<p>p.iva 56401044802116 Comune di Caulonia All Right Reserved Comune di Caulonia 2014 developed by <a href="http://www.fabastudio.it">FABA Studio.it</a></p>
+            
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				kh = $("#ordin-content").height();
+				fh = $("#attivi-content").height();
+				k = true;
+				f = true;
+				$( "#ordin-title" ).click();
+			});
+
+			$( "#ordin-title" ).click(function() {
+  				if(!k){
+  					$('#ordin-content').css({'height':kh-30+'px'});	
+  					$('#ordin-content').css({'padding':'15px'});	
+  					k= true;
+  				}
+  				else{
+  					$('#ordin-content').css({'height':0+'px'});	
+  					$('#ordin-content').css({'padding':'0px 15px 0px 15px'});	
+  					k=false;
+  				}
+  				if(f){
+  					$('#attivi-content').css({'height':0+'px'});	
+   					$('#attivi-content').css({'padding':'0px 15px 0px 15px'});	
+  					f=false;
+  				}
+			});
+
+			$( "#attivi-title" ).click(function() {
+  				if(!f){
+  					$('#attivi-content').css({'height':fh-30+'px'});	
+  					$('#attivi-content').css({'padding':'15px'});	
+  					f= true;
+  				}
+  				else{
+  					$('#attivi-content').css({'height':0+'px'});	
+   					$('#attivi-content').css({'padding':'0px 15px 0px 15px'});	
+  					f=false;
+  				}
+   				if(k){
+  					$('#ordin-content').css({'height':0+'px'});	
+  					$('#ordin-content').css({'padding':'0px 15px 0px 15px'});	
+  					k=false;
+  				}
+			});
+		</script>
+	</body>
+</html>

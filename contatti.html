@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Just Tarantella </title>
+		<link type="text/css" rel="stylesheet" href="css/global.css">	
+	</head>
+	<body id="body-contatti">
+		<div id="all-cont">
+			<div id="head">
+				<a id="logo" href="home.html"></a>
+				<div id="top-nav" class="menu">
+		            <a id="home-bott" href="home.html">home</a>
+		            <a id="chisiamo-bott" href="chisiamo.html">chi siamo</a>
+		            <a id="servizi-bott" href="servizi.html">servizi</a>
+		            <a id="gallery-bott" href="gallery.html">gallery</a>
+		            <a id="contatti-bott" href="contatti.html">contatti</a>
+				</div>
+			</div>
+
+			<div id="left">
+			</div>
+
+			<div id="sponsor-box">
+		        <div alt="Comune di Caulonia" class="sponsor" id="comune"></div>
+		        <div alt="Provincia di Reggio Calabria" class="sponsor" id="provincia"></div>
+		        <div alt="Regione Calabria" class="sponsor" id="regione"></div>
+		        <div alt="CNI Music" class="sponsor" id="cni"></div>
+			</div>
+
+			<div id="content">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d383.51100022520404!2d16.40684490000012!3d38.37971646973519!2m3!1f0!2f39.32691595191676!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x13153117bdd747db%3A0xc7486f876f2d02c6!2sVia+Ascesa+Amusa!5e1!3m2!1sit!2sit!4v1404839942512" width="800" height="600" frameborder="0" style="border:0"></iframe>
+            	<div id="form">
+                	<p id="contattaci" class="prog-date">contattaci</p>
+                    <p id="comune-contatti" class="prog-date">Comune di Caulonia</p>
+                    <p id="indirizzo" class="prog-date">via Roma - 89041 - Caulonia (RC)</p>
+		            <form name="contattaci" action="script/archive.php" method="POST">
+						<div class="sub">
+			 				<input type="text" name="nome" pattern="[a-zA-z]{3,100}" 
+			    				required onfocus="if(this.value=='Nome'){this.value=''; this.style.color='black'}" value="Nome"
+			    				onfocusout="if(this.value==''){this.value='Nome'; this.style.color='grey'}"/> 
+						</div>
+						<div class="sub">
+							<input type="text" name="mail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+						    	required onfocus="if(this.value=='ex. mario@rossi.it'){this.value=''; this.style.color='black'}" value="ex. mario@rossi.it" 
+						    	onfocusout="if(this.value==''){this.value='ex. mario@rossi.it'; this.style.color='grey'}"/> 
+						</div>
+						 <textarea name="testo" rows="8" cols="40" required></textarea>
+						 <input type="submit" name="inviala">   		
+		   			</form>
+                </div>
+                <div style="clear:both"></div>
+			</div>
+			<div id="footer">
+   				<p>p.iva 56401044802116 Comune di Caulonia All Right Reserved Comune di Caulonia 2014 developed by <a href="http://www.fabastudio.it">FABA Studio.it</a></p>
+			</div>
+		</div>
+	</body>
+</html>
